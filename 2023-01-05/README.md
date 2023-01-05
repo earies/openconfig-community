@@ -193,4 +193,5 @@ separate implementations at some point in time.  What this creates is then a
 proprietary encoding scheme that some implementations need to come up w/ for
 interface names (e.g. concatenating interface.subinterface) for portions of the
 model which obviously conflict with the true underlying representation and thus
-difficulties when referencing from other domains, logs, CLI, etc..
+difficulties when referencing from other domains (native schema), logs, CLI,
+etc..
