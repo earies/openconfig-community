@@ -1,4 +1,4 @@
-# Practical usage of interface 'type' and the association to IETF -> IANA types
+# 1. Practical usage of interface 'type' and the association to IETF -> IANA types
 
 ## Summary
 
@@ -81,7 +81,7 @@ For r/o objects, this can still be an attractive attribute to understand which
 interfaces are of which type dictated by the system but under most
 circumstances this is an object that is not editable.
 
-# tunnel/routed-vlan interface structures and design divergence implications
+# 2. tunnel/routed-vlan interface structures and design divergence implications
 
 ## Summary
 
