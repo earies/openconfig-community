@@ -195,3 +195,19 @@ interface names (e.g. concatenating interface.subinterface) for portions of the
 model which obviously conflict with the true underlying representation and thus
 difficulties when referencing from other domains (native schema), logs, CLI,
 etc..
+
+## Impact on path targeting
+
+For any API operations that target a specific path for interesting data (e.g.
+Give me all interfaces with IPv4 or IPv6 addresses), the divergence in model
+design for only _some_ interfaces means that a client cannot target a single
+specific path
+
+e.g.
+
+```
+/interfaces/interface[name=*]/subinterfaces/subinterface/ipv4/addresses
+```
+
+Since the path hierarchy is different, this means a client needs to target
+multiple paths for consumption or programmability of like objects.
